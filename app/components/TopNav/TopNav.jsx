@@ -27,7 +27,7 @@ export default function TopNav() {
                         ) : (
                             <>
                             <Link href="/signin"><button className="px-4 text-sm py-2 text-sky-600 rounded-lg border border-sky-600">Sign in</button></Link>
-                            <Link href="/signup"><button className="px-4 text-sm py-2 text-white rounded-lg bg-sky-600">Register</button></Link>
+                            <Link href="/register"><button className="px-4 text-sm py-2 text-white rounded-lg bg-sky-600">Register</button></Link>
                             </>
                         )
                     }
