@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link'
 import { useState } from "react"
 import { FaUser } from "react-icons/fa6";
 
@@ -14,7 +15,7 @@ export default function TopNav() {
     return (
         <nav className="w-full bg-white shadow-lg">
             <div className="flex items-center justify-between max-w-7xl mx-auto max-xl:px-3 h-[60px]">
-                <span className="font-semibold text-xl">SRM Student Clubs</span>
+                <Link href="/"><span className="font-semibold text-xl">SRM Student Clubs</span></Link>
                 <div className="flex items-center space-x-2">
                     {user 
                         ? (
@@ -25,8 +26,8 @@ export default function TopNav() {
                             </>
                         ) : (
                             <>
-                            <button className="px-4 text-sm py-2 text-sky-600 rounded-lg border border-sky-600">Sign in</button>
-                            <button className="px-4 text-sm py-2 text-white rounded-lg bg-sky-600">Register</button>
+                            <Link href="/signin"><button className="px-4 text-sm py-2 text-sky-600 rounded-lg border border-sky-600">Sign in</button></Link>
+                            <Link href="/signup"><button className="px-4 text-sm py-2 text-white rounded-lg bg-sky-600">Register</button></Link>
                             </>
                         )
                     }

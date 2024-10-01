@@ -18,9 +18,17 @@ export default function Home() {
                     <p className="mt-12 text-lg max-w-[600px] opacity-75 z-20">
                         {description}
                     </p>
-                    <button className="bg-green-600 w-64 py-2 mt-6 text-white font-medium rounded-lg ml-auto">
-                        Apply Now
-                    </button>
+                    {recruiting ? (
+                        <button className="bg-green-600 w-64 py-2 mt-6 text-white font-medium rounded-lg ml-auto">
+                            Apply Now
+                        </button>
+
+                    ) : (
+                        <button className="bg-gray-600 w-64 py-2 mt-6 text-white font-medium rounded-lg ml-auto">
+                            Applications Closed
+                        </button>
+
+                    )}
                 </div>
                 <img src={logo} alt="" className="w-[240px] object-contain" />
             </div>
