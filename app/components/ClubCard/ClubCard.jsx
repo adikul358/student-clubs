@@ -1,8 +1,10 @@
+import Link from 'next/link'
 import { useState } from 'react'
 
-export default function ClubCard({ title, logo, desc, color, recruiting }) {
+export default function ClubCard({ title, logo, desc, color, recruiting, id }) {
     const [focus, setFocus] = useState(false)
     return (
+        <Link href={`/club/${id}`}>
         <div
             className="club-card p-4 rounded-lg border-2 group transition-colors duration-500 ease-out cursor-pointer"
             onMouseEnter={() => setFocus(true)}
@@ -30,5 +32,6 @@ export default function ClubCard({ title, logo, desc, color, recruiting }) {
             </div>
             <p className={`mt-3 text-gray-500 line-clamp-2 ${focus && "text-white/80"}`}>{desc}</p>
         </div>
+        </Link>
     )
 }

@@ -1,5 +1,5 @@
 "use client"
-import CLUBS from "../sample"
+import CLUBS from "./sample"
 import ClubCard from "./components/ClubCard";
 
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
         </div>
         <div className="w-full py-[72px] max-w-7xl relative mx-auto max-xl:px-4">
             <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-8">
-                {CLUBS.map(({name, logo, description, color, recruiting}) => 
-                    <ClubCard title={name} logo={logo} desc={description} color={color} recruiting={recruiting} />
+                {CLUBS.map(({name, logo, description, color, recruiting}, i) => 
+                    <ClubCard key={i} id={i} title={name} logo={logo} desc={description} color={color} recruiting={recruiting} />
                 )}
             </div>
         </div>
