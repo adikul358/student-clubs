@@ -21,6 +21,7 @@ const CLUBS = [
         name: "Google Developers Student Club",
         logo: "/clubs/gdsc.png",
         color: "#e64437",
+        recruiting: true,
         description: "Google Developer Student Club (GDSC) is a program for university students to learn mobile and web development. Open to all skill levels, GDSC offers a space to explore ideas, collaborate, and enhance development skills. Join us to innovate and solve development challenges together!"
     },
     {

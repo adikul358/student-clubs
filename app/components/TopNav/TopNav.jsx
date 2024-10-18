@@ -15,7 +15,7 @@ export default function TopNav() {
     return (
         <nav className="w-full bg-white shadow-lg">
             <div className="flex items-center justify-between max-w-7xl mx-auto max-xl:px-3 h-[60px]">
-                <Link href="/"><span className="font-semibold text-xl">SRM Student Clubs</span></Link>
+                <Link href="/"><span className="font-semibold text-xl">ClubCentral</span></Link>
                 <div className="flex items-center space-x-2">
                     {user 
                         ? (

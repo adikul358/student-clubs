@@ -3,7 +3,7 @@ import TopNav from "./components/TopNav";
 import Footer from "./components/Footer";
 
 export const metadata = {
-    title: "SRM Student Clubs",
+    title: "ClubCentral",
     description: "A web-platform for collating information about student clubs and providing an integrated enrolment process.",
 };
 
